@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class LoginPage {
     public static final String loginBoxXpath = "//input[@placeholder='Login']";
     public static  final String passwordBoxXpath = "//input[@placeholder='Password']";
-    public static final String rememberMeCheckBoxXpath = "//input[@value='Log In']";
+    public static final String rememberMeCheckBoxXpath = "//input[@id='USER_REMEMBER']";
     public static final String loginButtonXpath = "//input[@value='Log In']";
 
     public static void login(){
