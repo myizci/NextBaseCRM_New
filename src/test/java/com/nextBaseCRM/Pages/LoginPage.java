@@ -9,6 +9,7 @@ public class LoginPage {
     public static  final String passwordBoxXpath = "//input[@placeholder='Password']";
     public static final String rememberMeCheckBoxXpath = "//input[@id='USER_REMEMBER']";
     public static final String loginButtonXpath = "//input[@value='Log In']";
+    public static final String forgotPasswordLink="//a[.='Forgot your password?']";
 
     public static void login(){
 
