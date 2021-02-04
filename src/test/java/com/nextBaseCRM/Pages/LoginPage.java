@@ -14,8 +14,10 @@ public class LoginPage {
     public static void login(){
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-        Driver.getDriver().findElement(By.xpath(loginBoxXpath)).sendKeys(ConfigurationReader.getProperty("userMarketing"));
+        Driver.getDriver().findElement(By.xpath(loginBoxXpath)).sendKeys(ConfigurationReader.getProperty("userHelpDesk"));
         Driver.getDriver().findElement(By.xpath(passwordBoxXpath)).sendKeys(ConfigurationReader.getProperty("password"));
         Driver.getDriver().findElement(By.xpath(loginButtonXpath)).click();
+
+        //work on branch1
     }
 }

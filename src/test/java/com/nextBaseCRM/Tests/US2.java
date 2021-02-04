@@ -14,13 +14,13 @@ import java.util.List;
 public class US2 extends TestBase {
 
     @Test
-    public void US2_TC1_sendMessage() throws InterruptedException {
+    public void US2_TC1_sendMessage()  {
 
 
         Driver.getDriver().findElement(By.xpath(MainPage.sendMessageBoxXpath)).click();
         // locate the iframe first and save a webElement
         // place the webElement inside the switch() expression
-        Thread.sleep(3000);
+        BrowserUtils.sleep(3);
         Driver.getDriver().switchTo().frame(MainPage.messageFrameWebElement);
         // write the message
         String message = "KAAA1234";

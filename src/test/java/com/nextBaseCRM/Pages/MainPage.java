@@ -18,4 +18,12 @@ public class MainPage {
     public static final String linkUrlXpath= "//input[@id='linkidPostFormLHE_blogPostForm-href']";
 
     public static final String TaskTabXpath = "//span[@id='feed-add-post-form-tab-tasks']";
+
+    //Search elements
+
+    public static final String employeesXpath= "(//div[.='Employees'])/..//a/span/span";
+    public static final String conversationsXpath= "(//div[.='Conversations'])/..//a/span/span";
+    public static final String otherXpath= "(//div[.='Other'])/..//a/span/span";
+    public static final String searchMenuItemXpath= "(//div[.='Search'])/..//a/span/span";
+
 }
