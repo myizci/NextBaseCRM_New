@@ -13,4 +13,5 @@ public class MainPage {
     public static final String writtenMessageLocation ="/html/body";//needed for assertion, where written message is stored
     public static final String sendButton ="//*[@id='blog-submit-button-save']";//outside the frame
 
+    public static final String TaskTabXpath = "//span[@id='feed-add-post-form-tab-tasks']";
 }
