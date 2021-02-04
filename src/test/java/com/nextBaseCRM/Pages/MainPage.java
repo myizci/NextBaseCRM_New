@@ -17,4 +17,5 @@ public class MainPage {
     public static final String linkTextXpath= "//input[@id='linkidPostFormLHE_blogPostForm-text']";
     public static final String linkUrlXpath= "//input[@id='linkidPostFormLHE_blogPostForm-href']";
 
+    public static final String TaskTabXpath = "//span[@id='feed-add-post-form-tab-tasks']";
 }
