@@ -12,5 +12,9 @@ public class MainPage {
     public static final String messageBodyXpath="//body[@contenteditable='true']"; // inside the frame, where we write actual message
     public static final String writtenMessageLocation ="/html/body";//needed for assertion, where written message is stored
     public static final String sendButton ="//*[@id='blog-submit-button-save']";//outside the frame
+    public static final String cancelButtonXpath="//button[@id='blog-submit-button-cancel']";
+    public static final String linkXpath="//span[@title='Link']";
+    public static final String linkTextXpath= "//input[@id='linkidPostFormLHE_blogPostForm-text']";
+    public static final String linkUrlXpath= "//input[@id='linkidPostFormLHE_blogPostForm-href']";
 
 }
