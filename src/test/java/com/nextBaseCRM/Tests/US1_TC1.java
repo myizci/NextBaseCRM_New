@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US1 {
+public class US1_TC1 {
 
     @Test
     public void US1_TC1_userCanLogin() {
@@ -22,14 +22,6 @@ public class US1 {
     }
 
 
-    @Test
-    public void US1_TC2_userCanCheckRememberMe() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-       WebElement remember= Driver.getDriver().findElement(By.xpath(LoginPage.rememberMeCheckBoxXpath));
-        remember.click();
-       Assert.assertTrue(remember.isSelected());
-
-    }
 
 
 }

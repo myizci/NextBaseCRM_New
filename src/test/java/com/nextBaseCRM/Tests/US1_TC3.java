@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US1_Forgot_Password {
+public class US1_TC3 {
 
     @Test
     public void US1_TC3_userCanAccessForgotPassword() {
