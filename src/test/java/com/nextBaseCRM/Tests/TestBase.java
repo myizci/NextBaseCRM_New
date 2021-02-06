@@ -17,6 +17,6 @@ public abstract class TestBase {
     @AfterMethod
     public static  void tearDown() {
         BrowserUtils.sleep(5);
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
 }
