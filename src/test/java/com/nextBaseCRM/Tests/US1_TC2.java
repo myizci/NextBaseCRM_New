@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class US1_TC2 extends TestBase{
+public class US1_TC2 {
 
     @Test
     public void US1_TC2_userCanCheckRememberMe() {
