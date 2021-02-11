@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 
-public class US12_Ghalip extends TestBase{
+public class US12 extends TestBase{
     // login is done automatically - due to Before method in TestBase.
 
     /*

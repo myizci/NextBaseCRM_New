@@ -1,5 +1,6 @@
 package com.nextBaseCRM.Tests;
 
+
 import com.nextBaseCRM.Pages.LoginPage;
 import com.nextBaseCRM.Utils.ConfigurationReader;
 import com.nextBaseCRM.Utils.Driver;
@@ -15,7 +16,8 @@ public class US1_TC3 {
         Driver.getDriver().findElement(By.xpath(LoginPage.forgotPasswordLink)).click();
         String expectedForgotPasswordTitle = "Get Password";
         String actualForgotPasswordTitle = Driver.getDriver().getTitle();
-        Assert.assertEquals(expectedForgotPasswordTitle,actualForgotPasswordTitle,"Cannot reach forgot password link, FAILED");
+        System.out.println("actualForgotPasswordTitle = " + actualForgotPasswordTitle);
+        Assert.assertEquals(expectedForgotPasswordTitle, actualForgotPasswordTitle, "Cannot reach forgot password link, FAILED");
 
 
     }

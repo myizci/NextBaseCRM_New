@@ -16,9 +16,8 @@ public class US1_TC1 {
 
         LoginPage.login();
         String actualTitle = Driver.getDriver().getTitle();
-        String expectedTitle = "(61) Portal";
-
-        Assert.assertEquals(actualTitle,expectedTitle);
+        //String expectedTitle = "(61) Portal";
+        Assert.assertTrue(actualTitle.contains("Portal"));
     }
 
 
