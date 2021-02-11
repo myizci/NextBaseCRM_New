@@ -15,8 +15,10 @@ public class US1_TC3 {
         Driver.getDriver().findElement(By.xpath(LoginPage.forgotPasswordLink)).click();
         String expectedForgotPasswordTitle = "Get Password";
         String actualForgotPasswordTitle = Driver.getDriver().getTitle();
+        System.out.println("actualForgotPasswordTitle = " + actualForgotPasswordTitle);
         Assert.assertEquals(expectedForgotPasswordTitle,actualForgotPasswordTitle,"Cannot reach forgot password link, FAILED");
 
 
     }
+
 }

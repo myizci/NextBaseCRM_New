@@ -9,14 +9,15 @@ import org.testng.annotations.BeforeMethod;
 public abstract class TestBase {
 
     @BeforeMethod
-    public void setUp() {
+    public static void setUp() {
         LoginPage.login();
     }
 
 
     @AfterMethod
-    public void tearDown() {
+    public static  void tearDown() {
         BrowserUtils.sleep(5);
         Driver.closeDriver();
     }
+
 }

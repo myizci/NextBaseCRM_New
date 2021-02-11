@@ -19,13 +19,6 @@ public class Driver {
             String browser = ConfigurationReader.getProperty("browser");
             switch (browser) {
 
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver= new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                    break;
-
                 case "firefox" :
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
