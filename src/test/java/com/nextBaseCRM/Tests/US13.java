@@ -1,24 +1,49 @@
 package com.nextBaseCRM.Tests;
 
-import com.nextBaseCRM.Pages.LoginPage;
 
+import com.nextBaseCRM.Pages.LoginPage;
 import com.nextBaseCRM.Pages.MainPage;
 import com.nextBaseCRM.Utils.BrowserUtils;
-import com.nextBaseCRM.Utils.ConfigurationReader;
-
 import com.nextBaseCRM.Utils.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class US13 { // this class does not extend the TestBase!
 
     @Test
     public void login_with_credentials_test() {
-        String[] userNameArray = {"userHr", "userMarketing", "userHelpDesk"}; // userName array.
+        // userCredentials: if different userNames and different passwords
+
+        /*
+        String[][] users = {{"userHr", "password"}, {"userMarketing", "password"}, {"userHelpDesk","password"}};
+        for (String[] user : users) {
+            LoginPage.loginWithCredentials(user[0], user[1]);
+        */
+
+        // Map of user:
+        Map<String, String> user=new LinkedHashMap<>(); // HashMap does not keep the order
+        //but LinkedHashMap keeps the order of input
+        user.put("userHr", "password");
+        user.put("userMarketing", "password");
+        user.put("userHelpDesk","password");
+
+        // Get keys and values
+        for (Map.Entry<String, String> entry : user.entrySet()) {
+            String username = entry.getKey();
+            String userPassword = entry.getValue();
+            LoginPage.loginWithCredentials(username, userPassword);
+
+        /*
+        String[] userNameArray = {"userHr", "userMarketing", "userHelpDesk"}; // username array.
         for (String each : userNameArray) {
             LoginPage.loginWithCredentials(each, "password");// different userNames, but the same Passwords
+           */
+
             Driver.getDriver().findElement(By.xpath(MainPage.timeAndReportsTabXpath)).click();
             Assert.assertTrue(Driver.getDriver().getTitle().contains("Absence Chart"));
             // go to the username and click to see the option logout

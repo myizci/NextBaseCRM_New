@@ -8,6 +8,9 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+// before you commit to collaboration site on GitHub,
+// create a branch at the local master and commit from the branch.
+
 public class US1 { // does not extend TestBase
 
     @Test
